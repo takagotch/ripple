@@ -2,6 +2,10 @@
 ---
 https://ripple.com/build/rippleapi/#boilerplate
 
+
+
+https://github.com/vhpoet/awesome-ripple#readme
+
 ```
 ```
 
