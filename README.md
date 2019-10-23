@@ -10,6 +10,44 @@ https://github.com/vhpoet/awesome-ripple#readme
 https://github.com/rubblelabs/ripple
 
 ```go
+func (t *testData) Bytes() []byte {
+  return h2b(t.Encoded)
+}
+
+func (t *TestData) NodeId() []byte {
+  return h2b(t.Id)
+}
+
+func (t *TestData) Reader() *bytes.Reader {
+  return bytes.NewReader(t.Bytes())
+}
+
+var Transactions = []TestData{
+  {"Payment", },
+  {"AccountSet", "" },
+  {"Set Regular Key", "", },
+  {"Offer Cancel", "", },
+  {"Trust Set",  },
+  {"Set Fee", ""},
+  {"AccountSet with Memo", "", }
+}
+
+var Validations = []TestData{
+  {"Validation #1", "", "", },
+  {"Validation #2", "", "", }
+}
+
+var Nodes = []TestData{
+  {"Ledger", "", "",  }, 
+  {},
+  {},
+}
+
+var BadNodes = []TestData{
+  {"Payment with buggy memo", ""},
+  {},
+  {}
+}
 ```
 
 ---
