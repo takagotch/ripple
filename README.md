@@ -90,7 +90,7 @@ var profile = new Profile({
 profile.appendTo(document.body);
 ```
 
-```
+```sh
 component install ripplejs/ripple
 ```
 
